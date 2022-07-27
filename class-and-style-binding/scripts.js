@@ -4,11 +4,4 @@ Vue.createApp({
       activeTab: 3,
     };
   },
-  methods: {
-    toggleTab(e) {
-      if (this.activeTab != parseInt(e.target.id)) {
-        this.activeTab = parseInt(e.target.id);
-      }
-    },
-  },
 }).mount("#app");

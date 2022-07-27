@@ -28,24 +28,21 @@
         <div class="tab-box">
           <nav class="tab-box__nav">
             <button
-              @click="toggleTab"
-              id="1"
+              @click="activeTab = 1"
               class="tab-box__nav-item"
               :class="{ 'tab-box__nav-item--active': activeTab === 1 }"
             >
               Tab 1
             </button>
             <button
-              id="2"
-              @click="toggleTab"
+              @click="activeTab = 2"
               class="tab-box__nav-item"
               :class="{ 'tab-box__nav-item--active': activeTab === 2 }"
             >
               Tab 2
             </button>
             <button
-              @click="toggleTab"
-              id="3"
+              @click="activeTab = 3"
               class="tab-box__nav-item"
               :class="{ 'tab-box__nav-item--active': activeTab === 3 }"
             >
