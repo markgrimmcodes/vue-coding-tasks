@@ -559,13 +559,13 @@ Vue.createApp({
       ];
       const singleBookItem = this.books[0];
 
-      const columnResult = Object.keys(singleBookItem).filter((propKey) => {
-        return validKeys.includes(propKey);
+      const columnResult = Object.keys(singleBookItem).filter((allKeys) => {
+        return validKeys.includes(allKeys);
       });
 
       return columnResult;
     },
-    onlyOReileyBooks() {
+    oReileyBooks() {
       return this.books.filter((book) => {
         return book.publisher === "O'Reilly Media";
       });
