@@ -1,9 +1,10 @@
 <template>
-  <button :class="styling">{{ text }}</button>
+  <button @click="$emit('change-bookmark')" :class="styling">{{ text }}</button>
 </template>
 
 <script>
 export default {
+  emits: ["change-bookmark"],
   props: {
     text: {
       type: String,
